@@ -187,6 +187,9 @@
     },
     "publicIpNameDC01": {
       "type": "string"
+    },
+    "publicIPAddressTypeDynamic": {
+      "type": "string"
     }
   },
   "variables": {
@@ -196,7 +199,6 @@
     "deployPublicIPsUrl": "[concat(variables('baseUrl'),'/deployPublicIPs.json')]",
     "publicIpName": "wapLbPip",
     "publicIPAddressType": "Static",
-    "publicIPAddressTypeDynamic": "Dynamic",
     "deployAvailabilitySetsUrl": "[concat(variables('baseUrl'),'/deployAvailabilitySets.json')]",
     "availabilitySetNames": [
       "addc-as",
@@ -290,7 +292,7 @@
             "value": "[parameters('publicIpNameDC01')]"
           },
           "publicIPAddressTypeDynamic": {
-            "value": "[variables('publicIPAddressTypeDynamic')"
+            "value": "[parameters('publicIPAddressTypeDynamic')"
           }
         }
       }
