@@ -287,7 +287,7 @@
             "value": "[variables('publicIPAddressType')]"
           },
           "publicIpNameDC1": {
-            "value": "[variables('publicIpNameDC1')]"
+            "value": "[parameters('publicIpNameDC1')]"
           },
           "publicIPAddressTypeDynamic": {
             "value": "[variables('publicIPAddressTypeDynamic')"
