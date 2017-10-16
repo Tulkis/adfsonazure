@@ -186,8 +186,7 @@
       }
     },
     "publicIpNameDC1": {
-      "type": "string",
-      "value": "dc01Pip"
+      "type": "string"
     }
   },
   "variables": {
