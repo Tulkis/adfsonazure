@@ -184,12 +184,6 @@
       "metadata": {
         "description": "The password for the local Administrator account of the virtual machines"
       }
-    },
-    "PublicIPNameDC1": {
-      "type": "string",
-      "metadata": {
-        "description": "n/a"
-      }
     }
   },
   "variables": {
