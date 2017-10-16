@@ -46,7 +46,7 @@
                 "id": "[parameters('subnetIds')[0]]"
               },
               "publicIPAddress": {
-                "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIpNameDC1'))]"
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses',parameters('publicIpNameDC01'))]"
               }
             }
           }
