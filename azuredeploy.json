@@ -185,7 +185,7 @@
         "description": "The password for the local Administrator account of the virtual machines"
       }
     },
-    "publicIpNameDC1": {
+    "publicIpNameDC01": {
       "type": "string"
     }
   },
@@ -286,8 +286,8 @@
           "publicIPAddressType": {
             "value": "[variables('publicIPAddressType')]"
           },
-          "publicIpNameDC1": {
-            "value": "[parameters('publicIpNameDC1')]"
+          "publicIpNameDC01": {
+            "value": "[parameters('publicIpNameDC01')]"
           },
           "publicIPAddressTypeDynamic": {
             "value": "[variables('publicIPAddressTypeDynamic')"
