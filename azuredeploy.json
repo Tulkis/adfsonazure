@@ -184,12 +184,6 @@
       "metadata": {
         "description": "The password for the local Administrator account of the virtual machines"
       }
-    },
-    "publicIpNameDC01": {
-      "type": "string"
-    },
-    "publicIPAddressTypeDynamic": {
-      "type": "string"
     }
   },
   "variables": {
@@ -199,6 +193,7 @@
     "deployPublicIPsUrl": "[concat(variables('baseUrl'),'/deployPublicIPs.json')]",
     "publicIpName": "wapLbPip",
     "publicIPAddressType": "Static",
+    "publicIpNameDC01": "dc01Pip",
     "deployAvailabilitySetsUrl": "[concat(variables('baseUrl'),'/deployAvailabilitySets.json')]",
     "availabilitySetNames": [
       "addc-as",
@@ -289,7 +284,7 @@
             "value": "[variables('publicIPAddressType')]"
           },
           "publicIpNameDC01": {
-            "value": "[parameters('publicIpNameDC01')]"
+            "value": "[variables('publicIpNameDC01')]"
           },
           "publicIPAddressTypeDynamic": {
             "value": "[parameters('publicIPAddressTypeDynamic')"
