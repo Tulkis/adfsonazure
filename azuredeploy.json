@@ -282,12 +282,6 @@
           },
           "publicIPAddressType": {
             "value": "[variables('publicIPAddressType')]"
-          },
-          "publicIpNameDC01": {
-            "value": "[variables('publicIpNameDC01')]"
-          },
-          "publicIPAddressTypeDynamic": {
-            "value": "[parameters('publicIPAddressTypeDynamic')"
           }
         }
       }
