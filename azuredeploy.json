@@ -198,7 +198,6 @@
     "deployStorageAccountsUrl": "[concat(variables('baseUrl'),'/deployStorageAccounts.json')]",
     "deployPublicIPsUrl": "[concat(variables('baseUrl'),'/deployPublicIPs.json')]",
     "publicIpName": "wapLbPip",
-    "publicIpNameDC1":"dc01Pip",
     "publicIPAddressType": "Static",
     "publicIPAddressTypeDynamic": "Dynamic",
     "deployAvailabilitySetsUrl": "[concat(variables('baseUrl'),'/deployAvailabilitySets.json')]",
