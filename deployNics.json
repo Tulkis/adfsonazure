@@ -22,6 +22,12 @@
     },
     "wapRDPNATRuleIDs": {
       "type": "array"
+    },
+    "publicIpNameDC1": {
+      "type": "array"
+    },
+    "publicIpNameDC1": {
+      "type": "array"
     }
   },
   "resources": [
