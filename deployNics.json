@@ -22,9 +22,6 @@
     },
     "wapRDPNATRuleIDs": {
       "type": "array"
-    },
-    "publicIPAddresses_dc01Pip_name": {
-      "type": "String"
     }
   },
   "resources": [
