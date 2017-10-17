@@ -44,6 +44,7 @@
               "subnet": {
                 "id": "[parameters('subnetIds')[0]]"
               },
+              "publicIPAllocationMethod": "Dynamic",
               "publicIPAddress": {
                 "id": "[resourceId('Microsoft.Network/publicIPAddresses',variables('publicIpNameDC01'))]"
               }
