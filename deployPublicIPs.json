@@ -8,10 +8,6 @@
     "publicIpName": {
       "type": "string"
     },
-    "PipDC01": {
-      "type": "string",
-      "Defaultvalue": "dc01Pip"
-    },
     "publicIPAddressType": {
       "type": "string"
     }

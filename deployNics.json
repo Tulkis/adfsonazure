@@ -20,6 +20,9 @@
     "wapBeAddressPoolID": {
       "type": "string"
     },
+    "PipDC01": {
+      "type": "string"
+    },
     "wapRDPNATRuleIDs": {
       "type": "array"
     }
