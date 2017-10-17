@@ -22,7 +22,7 @@
         "publicIPAllocationMethod": "[parameters('publicIPAddressType')]"
       },
       "type": "Microsoft.Network/publicIPAddresses",
-      "name": "[parameters('pipdc01')]",
+      "name": "[variables('pipdc01')]",
       "apiVersion": "2017-06-01",
       "location": "westeurope",
       "scale": null,

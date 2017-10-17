@@ -184,16 +184,14 @@
       "metadata": {
         "description": "The password for the local Administrator account of the virtual machines"
       }
-    },
-    "pipdc01": {
-      "type": "string"
     }
   },
   "variables": {
-    "baseUrl": "https://raw.githubusercontent.com/Tulkis/adfsonazure/master",
+    "baseUrl": "https://raw.githubusercontent.com/Tulkis/adfsonazure/master/",
     "storageAccountNamePrefix": "[concat(uniquestring(resourceGroup().id),'sa')]",
     "deployStorageAccountsUrl": "[concat(variables('baseUrl'),'/deployStorageAccounts.json')]",
     "deployPublicIPsUrl": "[concat(variables('baseUrl'),'/deployPublicIPs.json')]",
+    "pipdc01":"dc01Pip",
     "publicIpName": "wapLbPip",
     "publicIPAddressType": "Static",
     "deployAvailabilitySetsUrl": "[concat(variables('baseUrl'),'/deployAvailabilitySets.json')]",
