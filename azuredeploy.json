@@ -171,10 +171,6 @@
       },
       "defaultValue": "Standard_DS1_v2"
     },
-    "PipDC01": {
-      "type": "string",
-      "Defaultvalue": "dc01Pip"
-    },
     "adminUsername": {
       "type": "string",
       "metadata": {
@@ -191,7 +187,7 @@
     }
   },
   "variables": {
-    "baseUrl": "https://raw.githubusercontent.com/Tulkis/adfsonazure/master/",
+    "baseUrl": "https://raw.githubusercontent.com/Tulkis/adfsonazure/master",
     "storageAccountNamePrefix": "[concat(uniquestring(resourceGroup().id),'sa')]",
     "deployStorageAccountsUrl": "[concat(variables('baseUrl'),'/deployStorageAccounts.json')]",
     "deployPublicIPsUrl": "[concat(variables('baseUrl'),'/deployPublicIPs.json')]",
