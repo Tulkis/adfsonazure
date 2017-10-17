@@ -20,7 +20,17 @@
       "location": "[parameters('location')]",
       "properties": {
         "publicIPAllocationMethod": "[parameters('publicIPAddressType')]"
-      }
-    }
+      },
+      "type": "Microsoft.Network/publicIPAddresses",
+      "name": "[parameters('publicIPAddresses_dc01Pip_name')]",
+      "apiVersion": "2017-06-01",
+      "location": "westeurope",
+      "scale": null,
+      "properties": {
+          "publicIPAddressVersion": "IPv4",
+          "publicIPAllocationMethod": "Dynamic"
+      },
+      "dependsOn": []
+  }
   ]
 }

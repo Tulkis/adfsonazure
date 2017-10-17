@@ -22,7 +22,11 @@
     },
     "wapRDPNATRuleIDs": {
       "type": "array"
-    }
+    },
+    "publicIPAddresses_dc01Pip_name": {
+      "defaultValue": "dc01Pip",
+      "type": "String"
+  }
   },
   "resources": [
     {
@@ -43,8 +47,8 @@
               },
               "publicIPAllocationMethod": "Dynamic",
               "publicIPAddress": {
-                "id": "[resourceId('Microsoft.Network/publicIPAddresses',(dc01Pip)]"
-              }
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_dc01Pip_name'))]"
+            }
             }
           }
         ]
