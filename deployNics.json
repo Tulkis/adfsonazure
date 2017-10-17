@@ -24,6 +24,9 @@
       "type": "array"
     }
   },
+  "variables": {
+    "publicIpNameDC01": "dc01Pip"
+  },
   "resources": [
     {
       "comments": "DC01 NIC",
