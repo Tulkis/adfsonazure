@@ -25,7 +25,10 @@
     }
   },
   "variables": {
-    "pipdc01":"dc01Pip"
+    "pipdc01":"dc01Pip",
+    "pipdc02":"dc02Pip",
+    "pipadfs01":"adfs01Pip",
+    "pipadfs02":"adfs02Pip"
   },
   "resources": [
     {
@@ -68,7 +71,11 @@
               "privateIPAddress": "[parameters('ipAddresses')[1]]",
               "subnet": {
                 "id": "[parameters('subnetIds')[0]]"
-              }
+              },
+              "publicIPAllocationMethod": "Dynamic",
+              "publicIPAddress": {
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('pipdc02'))]"
+            }
             }
           }
         ]
@@ -94,7 +101,11 @@
                 {
                   "id": "[parameters('adfsBEAddressPoolID')]"
                 }
-              ]
+              ],
+              "publicIPAllocationMethod": "Dynamic",
+              "publicIPAddress": {
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('pipadfs01'))]"
+            }
             }
           }
         ]
@@ -120,7 +131,11 @@
                 {
                   "id": "[parameters('adfsBEAddressPoolID')]"
                 }
-              ]
+              ],
+              "publicIPAllocationMethod": "Dynamic",
+              "publicIPAddress": {
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('pipadfs02'))]"
+            }
             }
           }
         ]
