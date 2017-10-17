@@ -197,7 +197,6 @@
     "deployPublicIPsUrl": "[concat(variables('baseUrl'),'/deployPublicIPs.json')]",
     "publicIpName": "wapLbPip",
     "publicIPAddressType": "Static",
-    "publicIpNameDC01": "dc01Pip",
     "deployAvailabilitySetsUrl": "[concat(variables('baseUrl'),'/deployAvailabilitySets.json')]",
     "availabilitySetNames": [
       "addc-as",
