@@ -43,7 +43,7 @@
               },
               "publicIPAllocationMethod": "Dynamic",
               "publicIPAddress": {
-                "id": "[resourceId('Microsoft.Network/publicIPAddresses',dc01Pip)]"
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses',(dc01Pip)]"
               }
             }
           }
