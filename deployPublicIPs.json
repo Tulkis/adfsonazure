@@ -12,9 +12,6 @@
       "type": "string"
     }
   },
-  "variables": {
-    "pipdc01":"dc01Pip"
-  },
   "resources": [
     {
       "apiVersion": "2015-06-15",
@@ -23,15 +20,6 @@
       "location": "[parameters('location')]",
       "properties": {
         "publicIPAllocationMethod": "[parameters('publicIPAddressType')]"
-      },
-      "type": "Microsoft.Network/publicIPAddresses",
-      "name": "[variables('pipdc01')]",
-      "apiVersion": "2017-06-01",
-      "location": "westeurope",
-      "scale": null,
-      "properties": {
-          "publicIPAddressVersion": "IPv4",
-          "publicIPAllocationMethod": "Dynamic"
       }
     }
   ]

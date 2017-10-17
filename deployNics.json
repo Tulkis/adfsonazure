@@ -29,6 +29,15 @@
   },
   "resources": [
     {
+      "type": "Microsoft.Network/publicIPAddresses",
+      "name": "[variables('pipdc01')]",
+      "apiVersion": "2017-06-01",
+      "location": "[parameters('location')]",
+      "scale": null,
+      "properties": {
+          "publicIPAddressVersion": "IPv4",
+          "publicIPAllocationMethod": "Dynamic"
+      },
       "comments": "DC01 NIC",
       "name": "[parameters('nicNames')[0]]",
       "type": "Microsoft.Network/networkInterfaces",
@@ -38,10 +47,6 @@
         "ipConfigurations": [
           {
             "name": "ipconfig1",
-            "dependsOn": [
-              "Microsoft.Resources/deployments/virtualNetworkDeployment",
-              "Microsoft.Resources/deployments/loadBalancerDeployment"
-            ],
             "properties": {
               "privateIPAllocationMethod": "Static",
               "privateIPAddress": "[parameters('ipAddresses')[0]]",
