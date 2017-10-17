@@ -171,16 +171,16 @@
       },
       "defaultValue": "Standard_DS1_v2"
     },
+    "publicIPAddressesdc01Pipname": {
+      "type": "string",
+      "Defaultvalue": "dc01Pip"
+    },
     "adminUsername": {
       "type": "string",
       "metadata": {
         "description": "The name of the local Administrator of the virtual machines"
       }
     },
-    "publicIPAddressesdc01Pipname": {
-      "type": "string",
-      "Defaultvalue": "dc01Pip"
-      },
     "adminPassword": {
       "type": "securestring",
       "minLength": 12,
