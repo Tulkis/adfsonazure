@@ -24,9 +24,6 @@
       "type": "array"
     }
   },
-  "variables": {
-    "pipdc01":"dc01Pip"
-  },
   "resources": [
     {
       "comments": "DC01 NIC",

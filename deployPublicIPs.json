@@ -12,6 +12,9 @@
       "type": "string"
     }
   },
+  "variables": {
+    "pipdc01":"dc01Pip"
+  },
   "resources": [
     {
       "apiVersion": "2015-06-15",
