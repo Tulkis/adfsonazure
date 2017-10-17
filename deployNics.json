@@ -38,6 +38,10 @@
         "ipConfigurations": [
           {
             "name": "ipconfig1",
+            "dependsOn": [
+              "Microsoft.Resources/deployments/virtualNetworkDeployment",
+              "Microsoft.Resources/deployments/loadBalancerDeployment"
+            ],
             "properties": {
               "privateIPAllocationMethod": "Static",
               "privateIPAddress": "[parameters('ipAddresses')[0]]",
