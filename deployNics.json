@@ -31,7 +31,10 @@
       "type": "Microsoft.Network/networkInterfaces",
       "location": "[parameters('location')]",
       "apiVersion": "2015-06-15",
-      "properties": {
+      "dependsOn": [
+        "[variables('pipdc01')]"
+      ],
+        "properties": {
         "ipConfigurations": [
           {
             "name": "ipconfig1",
