@@ -33,6 +33,6 @@
           "publicIPAddressVersion": "IPv4",
           "publicIPAllocationMethod": "Dynamic"
       }
-  }
+    }
   ]
 }
