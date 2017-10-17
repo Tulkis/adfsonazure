@@ -183,7 +183,11 @@
       "maxLength": 40,
       "metadata": {
         "description": "The password for the local Administrator account of the virtual machines"
-      }
+      },
+      "publicIPAddresses_dc01Pip_name": {
+        "defaultValue": "dc01Pip",
+        "type": "String"
+    }
     }
   },
   "variables": {
