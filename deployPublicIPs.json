@@ -21,6 +21,10 @@
       "type": "Microsoft.Network/publicIPAddresses",
       "name": "[parameters('publicIpName')]",
       "location": "[parameters('location')]",
+      "dependsOn": [
+        "Microsoft.Resources/deployments/virtualNetworkDeployment",
+        "Microsoft.Resources/deployments/loadBalancerDeployment"
+      ],
       "properties": {
         "publicIPAllocationMethod": "[parameters('publicIPAddressType')]"
       },
@@ -29,6 +33,10 @@
       "apiVersion": "2017-06-01",
       "location": "westeurope",
       "scale": null,
+      "dependsOn": [
+        "Microsoft.Resources/deployments/virtualNetworkDeployment",
+        "Microsoft.Resources/deployments/loadBalancerDeployment"
+      ],
       "properties": {
           "publicIPAddressVersion": "IPv4",
           "publicIPAllocationMethod": "Dynamic"
