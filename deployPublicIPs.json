@@ -32,8 +32,7 @@
       "properties": {
           "publicIPAddressVersion": "IPv4",
           "publicIPAllocationMethod": "Dynamic"
-      },
-      "dependsOn": []
+      }
   }
   ]
 }
