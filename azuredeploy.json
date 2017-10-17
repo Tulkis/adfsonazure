@@ -177,18 +177,16 @@
         "description": "The name of the local Administrator of the virtual machines"
       }
     },
+    "publicIPAddressesdc01Pipname": {
+      "type": "string",
+      "Defaultvalue": "dc01Pip"
+      },
     "adminPassword": {
       "type": "securestring",
       "minLength": 12,
       "maxLength": 40,
       "metadata": {
         "description": "The password for the local Administrator account of the virtual machines"
-      },
-    "publicIPAddressesdc01Pipname": {
-      "metadata": {
-        "description": "The internal IP address of the second ADFS server, this IP address will be statically assigned to the ADFS server and must be a valid ip address within the Internal subnet."
-      },
-      "defaultValue": "dc01Pip"
       }
     }
   },
