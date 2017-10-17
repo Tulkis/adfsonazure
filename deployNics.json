@@ -24,6 +24,9 @@
       "type": "array"
     }
   },
+  "variables": {
+    "pipdc01":"dc01Pip"
+  },
   "resources": [
     {
       "comments": "DC01 NIC",
@@ -31,10 +34,7 @@
       "type": "Microsoft.Network/networkInterfaces",
       "location": "[parameters('location')]",
       "apiVersion": "2015-06-15",
-      "dependsOn": [
-        "[variables('pipdc01')]"
-      ],
-        "properties": {
+      "properties": {
         "ipConfigurations": [
           {
             "name": "ipconfig1",
