@@ -171,7 +171,7 @@
       },
       "defaultValue": "Standard_DS1_v2"
     },
-    "publicIPAddressesdc01Pipname": {
+    "PipDC01": {
       "type": "string",
       "Defaultvalue": "dc01Pip"
     },
