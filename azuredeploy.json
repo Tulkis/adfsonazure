@@ -185,7 +185,7 @@
         "description": "The password for the local Administrator account of the virtual machines"
       }
     },
-    "PipDC01": {
+    "pipdc01": {
       "type": "string"
     }
   },
