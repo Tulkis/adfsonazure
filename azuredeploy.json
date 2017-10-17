@@ -184,9 +184,9 @@
       "metadata": {
         "description": "The password for the local Administrator account of the virtual machines"
       },
-      "publicIPAddresses_dc01Pip_name": {
-        "type": "String",
-        "defaultValue": "dc01Pip"
+    "publicIPAddresses_dc01Pip_name": {
+      "type": "String",
+      "defaultValue": "dc01Pip"
     }
     }
   },
