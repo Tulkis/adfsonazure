@@ -24,12 +24,6 @@
       "type": "array"
     }
   },
-  "variables": {
-    "pipdc01":"dc01Pip",
-    "pipdc02":"dc02Pip",
-    "pipadfs01":"adfs01Pip",
-    "pipadfs02":"adfs02Pip"
-  },
   "resources": [
     {
       "comments": "DC01 NIC",
@@ -49,7 +43,7 @@
               },
               "publicIPAllocationMethod": "Dynamic",
               "publicIPAddress": {
-                "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('pipdc01'))]"
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', dc01Pip)]"
             }
             }
           }
@@ -74,7 +68,7 @@
               },
               "publicIPAllocationMethod": "Dynamic",
               "publicIPAddress": {
-                "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('pipdc02'))]"
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', dc02Pip)]"
             }
             }
           }
@@ -104,7 +98,7 @@
               ],
               "publicIPAllocationMethod": "Dynamic",
               "publicIPAddress": {
-                "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('pipadfs01'))]"
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', adfs01Pip)]"
             }
             }
           }
@@ -134,7 +128,7 @@
               ],
               "publicIPAllocationMethod": "Dynamic",
               "publicIPAddress": {
-                "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('pipadfs02'))]"
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', adfs02Pip)]"
             }
             }
           }
