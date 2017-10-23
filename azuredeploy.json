@@ -343,7 +343,8 @@
       "apiVersion": "2015-01-01",
       "dependsOn": [
         "Microsoft.Resources/deployments/virtualNetworkDeployment",
-        "Microsoft.Resources/deployments/publicIpAddressesDeployment"
+        "Microsoft.Resources/deployments/publicIpAddressesDeployment",
+        "Microsoft.Resources/deployments/publicIPAddresses"
       ],
       "properties": {
         "mode": "Incremental",
